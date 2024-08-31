@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <title>Auto Tree</title>
+    <title>Auto Roll</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Chrome Extension Template" />
     <script src="popup.js" type="text/javascript"></script>
@@ -20,7 +19,7 @@
         <div id="logo_area">
             <img id="logo" src="icons/icon128.png" alt="">
             <div id="logo_title">
-                <span id="title">Auto Tree</span>
+                <span id="title">Auto Roll</span>
                 <span id="slogan">
                     Pixels Auto Extension
                 </span>
@@ -37,8 +36,8 @@
         </div>
         <button id="secretBtn">Kích Hoạt</button>
     </div>
-    <div id="app">
 
+    <div id="app">
         <div class="user_info">
             <div class="right-content">
                 <div class="info_content">
@@ -67,7 +66,6 @@
                 </div>
             </div>
         </div>
-
         <div class="alias-name">
             <div class="alias-input">
                 <input class="secretInput" id="aliasName-2" type="text" placeholder="Chrome (VD: 001)"
@@ -76,11 +74,9 @@
             </div>
             <span class="note" id="_version">Phiên bản: ______&nbsp;</span>
         </div>
-
         <div class="terminal" id="terminal">
-            Click "Start" to begin.
+            Click Start to begin
         </div>
-
 
         <div class="actions">
             <div class="left_actions">
@@ -95,71 +91,67 @@
             </div>
         </div>
 
-        <div class="player_details">
-            <div class="info_details">
-                <!-- <div id="user_logo">
-                    <img src="icons/icon48.png" alt="">
-                </div> -->
-                <div class="levels">
-                    <div class="level_item">
-                        <span class="lv_lb">Farming: </span>
-                        <span class="lv_vl" id="lv_farming">0</span>
-                    </div>
-                    <div class="level_item">
-                        <span class="lv_lb">Forestry: </span>
-                        <span class="lv_vl" id="lv_forestry">0</span>
-                    </div>
-                    <div class="level_item">
-                        <span class="lv_lb">Cooking: </span>
-                        <span class="lv_vl" id="lv_cooking">0</span>
-                    </div>
-                    <div class="level_item">
-                        <span class="lv_lb">Mining: </span>
-                        <span class="lv_vl" id="lv_mining">0</span>
-                    </div>
+        <div id="player" class="info_details">
+            <div id="user_logo">
+                <img src="icons/icon128.png" alt="">
+            </div>
+            <span id="user_name"></span>
+            <a id="license" target="_blank">License 0/0</a>
+            <span id="ip_address">Please click "Start"</span>
+            <div class="address_area">
+                <span class="address" id="region">...</span>
+                <span class="address" id="country">...</span>
+            </div>
+            <div class="ip_details" id="ip_details">
+                <div class="item">
+                    <div class="_value" id="tor_value"></div>
+                    <div class="_label">Tor</div>
                 </div>
-                <span id="user_name"></span>
-                <a class="license" id="license" target="_blank">Loading License Status...</a>
-                <span id="ip_address">Please click "Start"</span>
-                <div class="address_area">
-                    <span class="address" id="region">...</span>
-                    <span class="address" id="country">...</span>
+                <div class="item">
+                    <div class="_value" id="vpn_value"></div>
+                    <div class="_label">VPN</div>
                 </div>
-                <div class="ip_details" id="ip_details">
-                    <div class="item">
-                        <div class="_value" id="tor_value"></div>
-                        <div class="_label">Tor</div>
-                    </div>
-                    <div class="item">
-                        <div class="_value" id="vpn_value"></div>
-                        <div class="_label">VPN</div>
-                    </div>
-                    <div class="item">
-                        <div class="_value" id="proxy_value"></div>
-                        <div class="_label">Proxy</div>
-                    </div>
-                    <div class="item">
-                        <div class="_value" id="relay_value"></div>
-                        <div class="_label">Relay</div>
-                    </div>
+                <div class="item">
+                    <div class="_value" id="proxy_value"></div>
+                    <div class="_label">Proxy</div>
+                </div>
+                <div class="item">
+                    <div class="_value" id="relay_value"></div>
+                    <div class="_label">Relay</div>
                 </div>
             </div>
-            <div id="player" class="player">
-                <div class="card_title">
-                    <span>Inventory</span>
+
+            <div class="right-content _roll_overview">
+                <div class="info_content _roll_content">
+                    <div class="label energy_label">Delivered</div>
+                    <div class="value energy">
+                        <span id="completedTask">0</span>
+                    </div>
                 </div>
-                <div id="itemList" class="mission__list">
-                    <div class="mission__item"></div>
+                <div class="info_content _roll_content">
+                    <div class="label coin_label">Spent</div>
+                    <div class="value coin">
+                        <span id="rolledCoin">0</span>
+                        <!-- coinReward -->
+                        <img class="_icon"
+                            src="https://d31ss916pli4td.cloudfront.net/uploadedAssets/currency/cur_coins/e66e4f48-2b99-45f8-b8fc-74d43e391d1c.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="info_content _roll_content">
+                    <div class="label pixel_label">Earned</div>
+                    <div class="value pixel">
+                        <span id="pixelReward">0</span>
+                        <img class="_icon"
+                            src="https://d31ss916pli4td.cloudfront.net/uploadedAssets/currency/pixels_pixel_currency_new_2.png"
+                            alt="">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="mission" class="mission">
-            <div id="missionList" class="mission__list">
-                <div class="mission__item"></div>
-            </div>
+        <div id="mission">
+            <div id="test_123"></div>
         </div>
-
         <div class="_disconnected" id="_disconnected">
             <div>Lost connection to server.</div>
             <div>Reconnecting...</div>
@@ -168,8 +160,6 @@
         <div class="_disconnected" id="_lock_ui">
             License Actived: 10/10
         </div>
-
-        <a id="openGameTab" hidden href="https://play.pixels.xyz" target="_blank"></a>
     </div>
 </body>
 
