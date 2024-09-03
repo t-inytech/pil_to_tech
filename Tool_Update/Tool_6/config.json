@@ -1,0 +1,23 @@
+{
+  "key": "",
+  "energyStop": 50,
+  "landId": "",
+  "autoStart": false,
+  "autoClose": false,
+  "workAt": 1, 
+  "slotLimit": 0,
+  "workDirection": 5,
+  "repeat": false,
+  "autoBuy": true,
+  "automaticBuy": true,
+  "craftQuantity": 0,
+  "energyItem": "",
+  "buyEnergyQuantity": 0,
+  "homeWood": false,
+  "crafting": "ach_claypowder",
+  "listSellItems": "",
+  "diffPrice": 0,
+  "sauna": true,
+  "sleep": false,
+  "eVip": false
+}

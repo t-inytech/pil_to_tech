@@ -1,0 +1,16 @@
+{
+  "key": "",
+  "energyStop": 50,
+  "landId": "",
+  "autoStart": false,
+  "autoClose": false,
+  "allowAllTier": false,
+  "automaticBuy": true,
+  "listSellItems": "",
+  "throwItems": "",
+  "diffPrice": 0,
+  "eVip": true,
+  "sauna": true,
+  "sleep": false,
+  "repeat": false
+}

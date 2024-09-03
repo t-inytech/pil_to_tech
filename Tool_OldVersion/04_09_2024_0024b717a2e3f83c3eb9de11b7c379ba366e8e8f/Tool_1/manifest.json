@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Pixels Auto Farm",
+  "description": "Pixels Auto Tools",
+  "version": "10.5.4",
+  "author": "T-INY Tech",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [{
+    "matches": ["*://play.pixels.xyz/*"],
+    "js": ["content_scripts.js"]
+  },{
+    "matches": ["*://play.pixels.xyz/*"],
+    "js": ["variables.js"],
+    "world": "MAIN"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["variables.html"],
+    "matches": ["*://play.pixels.xyz/*"]
+  }],
+  "action": {
+    "default_popup": "popup.html#popup",
+    "default_title": "Auto Farm"
+  },
+  "commands": {
+    "turn-on": {
+      "suggested_key": {
+        "default": "Alt + Shift + M"
+      },
+      "description": "Adds an ON badge to the action icon."
+    },
+    "turn-off": {
+      "suggested_key": {
+        "default": "Alt + Shift + N"
+      },
+      "description": "Adds an OFF badge to the action icon."
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt + Shift + L"
+      }
+    }
+  }
+}
