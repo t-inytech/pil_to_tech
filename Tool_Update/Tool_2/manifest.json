@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Pixels Auto Roll",
   "description": "Pixels Auto Tools",
-  "version": "5.2.51",
+  "version": "5.2.52",
   "author": "CherryTool",
   "icons": {
     "16": "icons/icon16.png",

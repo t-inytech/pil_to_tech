@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Pixels Auto Wood Work",
   "description": "Pixels Auto Tools",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "author": "T-INY Tech",
   "icons": {
     "16": "icons/icon16.png",
