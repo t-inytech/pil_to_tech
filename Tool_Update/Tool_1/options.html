@@ -62,6 +62,17 @@
                 <input type="number" id="slotLimit" value="" />
             </div>
             <div class="item item_input">
+                <span>Tọa độ bắt đầu, nhập theo định dạng x,y (vd: 2445,1945), để trống nếu không muốn giới hạn theo tọa
+                    độ</span>
+                <input type="text" id="startCoordinate" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Tọa độ kết thúc, nhập theo định dạng x,y (vd: 4179,3211), để trống nếu không muốn giới hạn theo
+                    tọa
+                    độ</span>
+                <input type="text" id="endCoordinate" value="" />
+            </div>
+            <div class="item item_input">
                 <span>Dừng tool khi năng lượng thấp hơn</span>
                 <input type="number" id="energyStop" value="50" />
             </div>
@@ -78,7 +89,18 @@
                     <option value="itm_scarrotwine">Scarrot Wine</option>
                 </select>
             </div>
-            
+
+            <div class="item item_input">
+                <span>Hướng di chuyển khi làm</span>
+                <select id="workDirection">
+                    <option value="1">Trái qua phải</option>
+                    <option value="2">Phải qua trái</option>
+                    <option value="3">Trên xuống dưới</option>
+                    <option value="4">Dưới lên trên</option>
+                    <option value="5">Random 1 trong 4 hướng</option>
+                </select>
+            </div>
+
             <div id="energySetting" class=" item item_input">
                 <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)
                 </span>
@@ -87,16 +109,6 @@
         </div>
 
         <div class="_group _group_1">
-            <div class="item item_input">
-                <span>Hướng di chuyển khi làm</span>
-                <select id="workDirection" >
-                    <option value="1">Trái qua phải</option>
-                    <option value="2">Phải qua trái</option>
-                    <option value="3">Trên xuống dưới</option>
-                    <option value="4">Dưới lên trên</option>
-                    <option value="5">Random 1 trong 4 hướng</option>
-                </select>
-            </div>
             <div class="item item_input">
                 <span>Chế độ trồng cây khi dừng</span>
                 <select id="farmingMode">
