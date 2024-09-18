@@ -4,7 +4,7 @@
   "landId": "",
   "autoStart": false,
   "autoClose": false,
-  "slotLimit": 0,
+  "slotLimit": 500,
   "startCoordinate": "",
   "endCoordinate": "",
   "workDirection": 5,
