@@ -85,6 +85,15 @@
 
         <div class="_group _group_1">
             <div class="item item_input">
+                <span>Số cây chặt tối đa</span>
+                <span>(nếu muốn ít hơn số cây tối đa ở land)</span>
+                <input type="number" id="slotLimit" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="999" />
+            </div>
+            <div class="item item_input">
                 <span>Chế độ Chặt gỗ</span>
                 <select id="homeTree">
                     <option value="1">Chặt tận gốc</option>
@@ -97,6 +106,17 @@
                 <select id="homeTreeTier">
                     <option value="1">Tất cả tier bé hơn hoặc bằng rìu</option>
                     <option value="2">Chỉ tier của rìu</option>
+                </select>
+            </div>
+
+            <div class="item item_input">
+                <span>Hướng di chuyển khi làm</span>
+                <select id="workDirection">
+                    <option value="1">Trái qua phải</option>
+                    <option value="2">Phải qua trái</option>
+                    <option value="3">Trên xuống dưới</option>
+                    <option value="4">Dưới lên trên</option>
+                    <option value="5">Random 1 trong 4 hướng</option>
                 </select>
             </div>
 

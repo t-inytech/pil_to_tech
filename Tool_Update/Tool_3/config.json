@@ -1,6 +1,9 @@
 {
   "key": "",
-  "energyStop": 50,
+  "energyStop": 100,
+  "levelStop": 999,
+  "slotLimit": "",
+  "workDirection": 5,
   "landId": "",
   "autoStart": false,
   "autoClose": false,
