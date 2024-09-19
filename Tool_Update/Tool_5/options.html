@@ -58,12 +58,22 @@
                 <input type="number" id="landId" value="" />
             </div>
             <div class="item item_input">
-                <span>Làm tất cả các mỏ có tier thấp hơn với cuốc đang có (mặc định không tít vào là chỉ làm những mỏ cùng tier với cuốc)</span>
-                <input type="checkbox" id="allowAllTier" />
+                <span>Số slot làm tối đa (nếu muốn ít hơn số slot tối đa ở land)</span>
+                <input type="number" id="slotLimit" value="" />
             </div>
             <div class="item item_input">
                 <span>Dừng tool khi năng lượng thấp hơn</span>
-                <input type="number" id="energyStop" value="50" />
+                <input type="number" id="energyStop" value="" />
+            </div>
+            <div class="item ">
+                <input type="checkbox" id="allowAllTier" />
+                <span><label for="allowAllTier">Làm tất cả các mỏ có tier thấp hơn với cuốc đang có (mặc định không tít vào là chỉ làm những mỏ
+                    cùng tier với cuốc)</label></span>
+                
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="888" />
             </div>
             <div class="item item_input">
                 <span>Dùng item hồi năng lượng</span>
@@ -83,6 +93,16 @@
                 <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)
                 </span>
                 <input type="number" id="buyEnergyQuantity" />
+            </div>
+            <div class="item item_input">
+                <span> Hướng di chuyển khi làm</span>
+                <select id="workDirection" >
+                    <option value="1">Trái qua phải</option>
+                    <option value="2">Phải qua trái</option>
+                    <option value="3">Trên xuống dưới</option>
+                    <option value="4">Dưới lên trên</option>
+                    <option value="5">Random 1 trong 4 hướng</option>
+                </select>
             </div>
         </div>
 
@@ -104,10 +124,11 @@
                 </span>
                 <input type="text" id="listSellItems" />
             </div>
-
-            <div class="item" id="sellSetting">
+            <div class="item item_input" id="sellSetting" style="display: block;">
+                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị </span>
+                <span>(có thể nhập số âm nếu muốn thấp hơn)
+                </span>
                 <input type="number" id="diffPrice" />
-                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị (có thể nhập số âm nếu muốn thấp hơn)</span>
             </div>
         </div>
 
