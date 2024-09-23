@@ -1,0 +1,19 @@
+{
+  "key": "",
+  "energyStop": 50,
+  "autoStart": false,
+  "autoClose": false,
+  "landId": "",
+  "repeat": false,
+  "autoBuy": true,
+  "automaticBuy": true,
+  "craftQuantity": 0,
+  "energyItem": "",
+  "buyEnergyQuantity": 0,
+  "recipe": "ach_popberryWine",
+  "listSellItems": "",
+  "diffPrice": 0,
+  "sauna": true,
+  "sleep": false,
+  "eVip": false
+}
