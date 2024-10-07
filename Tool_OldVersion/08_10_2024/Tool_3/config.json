@@ -1,0 +1,19 @@
+{
+  "key": "",
+  "energyStop": 100,
+  "levelStop": 999,
+  "slotLimit": "",
+  "workDirection": 5,
+  "landId": "",
+  "autoStart": false,
+  "autoClose": false,
+  "homeTree": 2,
+  "homeTreeTier": 2,
+  "automaticBuy": true,
+  "listSellItems": "",
+  "diffPrice": 0,
+  "eVip": true,
+  "sauna": true,
+  "sleep": false,
+  "repeat": false
+}

@@ -1,0 +1,20 @@
+{
+  "key": "",
+  "autoStart": false,
+  "autoClose": false,
+  "automaticBuy": true,
+  "limitMax": 100000,
+  "limitBalance": 10000,
+  "limitPerCoinTask": 5000,
+  "limitPerPixelTask": 20000,
+  "ignoreItems": "",
+  "ignoreFarming": false,
+  "ignoreCooking": false,
+  "ignoreForestry": false,
+  "ignoreMining": false,
+  "ignoreWoodwork": false,
+  "ignoreMetalworking": false,
+  "ignoreStoneshaping": false,
+  "ignorePetcare": false,
+  "ignoreBusiness": false
+}

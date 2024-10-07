@@ -1,4 +1,3 @@
-<!-- (c) 2022 Clyde D'Souza -->
 <html>
 
 <head>
@@ -94,6 +93,10 @@
                 <input type="number" id="levelStop" value="999" />
             </div>
             <div class="item item_input">
+                <span>Delay ở mỗi lần làm (ms)</span>
+                <input type="number" id="delay" placeholder="Tốc độ làm của tool"  value="150" />
+            </div>
+            <div class="item item_input">
                 <span>Chế độ Chặt gỗ</span>
                 <select id="homeTree">
                     <option value="1">Chặt tận gốc</option>
@@ -124,6 +127,34 @@
                 <input type="checkbox" id="automaticBuy" />
                 <span>Mua item bằng chức năng automatic buy trong chợ</span>
             </div>
+
+            <div class="item item_input">
+                <span>Tự login với seed phrase</span>
+                <span>
+                </span>
+                <input type="text" id="seedPhrase" />
+            </div>
+
+            <div class="item item_input"> 
+                <span>Tọa độ bắt đầu, nhập theo định dạng x,y</span>
+                <span>(vd: 2445,1945), để trống nếu không muốn giới hạn theo tọa độ
+                </span>
+                <input type="text" id="startCoordinate" />
+            </div>
+
+            <div class="item item_input"> 
+                <span> Tọa độ kết thúc, nhập theo định dạng x,y</span>
+                <span>(vd: 2445,1945), để trống nếu không muốn giới hạn theo tọa độ
+                </span>
+                <input type="text" id="endCoordinate" />
+            </div>
+
+            <div class="item item_input"> 
+                <span>  Vứt vật phẩm không cần </span>
+                <span>(nhập nhiều vật phẩm cách nhau dấu "," vd: itm_metalore_02,itm_roughstone_02)</span>
+                <input type="text" id="throwItems" />
+            </div>
+
 
             <div class="item item_input">
                 <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>

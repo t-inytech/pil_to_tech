@@ -54,8 +54,24 @@
 
         <div class="_group _group_1">
             <div class="item item_input">
+                <span>Delay ở mỗi lần làm (ms)</span>
+                <input type="number" id="delay" value="100" />
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="900" />
+            </div>
+            <div class="item item_input">
                 <span>Land Id (để trống nếu muốn trồng ở speck)</span>
                 <input type="number" id="landId" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Delay ở mỗi lần làm (đơn vị ms, càng nhỏ thì làm càng nhanh nhưng dễ bị limit)</span>
+                <input type="number" id="delay" value="100" />
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="999" />
             </div>
             <div class="item item_input">
                 <span>Số ô trồng tối đa (nếu muốn trồng ít hơn số ô tối đa ở land)</span>
@@ -140,12 +156,20 @@
                 <input type="checkbox" id="automaticBuy" />
                 <span>Mua item bằng chức năng automatic buy trong chợ</span>
             </div>
-
+            <div class="item item_input">
+                <span>Tự login với seed phrase</span>
+                <input type="text" id="listSellItems" />
+            </div>
             <div class="item item_input">
                 <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>
                 <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
                 </span>
-                <input type="text" id="listSellItems" />
+                <input type="text" id="seedPhrase" />
+            </div>
+
+            <div class="item item_input">
+                <span>Tự login với seed phrase</span>
+                <input type="text" id="seedPhrase" />
             </div>
 
             <div class="item" id="sellSetting">

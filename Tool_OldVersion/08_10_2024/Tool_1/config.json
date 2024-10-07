@@ -1,0 +1,22 @@
+{
+  "key": "",
+  "energyStop": 100,
+  "landId": "",
+  "autoStart": false,
+  "autoClose": false,
+  "slotLimit": 500,
+  "startCoordinate": "",
+  "endCoordinate": "",
+  "workDirection": 5,
+  "farmingMode": 1,
+  "farmTier": 3,
+  "automaticBuy": true,
+  "seedType": "itm_popberrySeeds",
+  "seedBuyLimit": 198,
+  "listSellItems": "",
+  "diffPrice": 0,
+  "eVip": true,
+  "sauna": true,
+  "sleep": false,
+  "repeat": false
+}

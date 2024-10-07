@@ -55,7 +55,7 @@
         <div class="_group _group_1">
             <div class="item item_input">
                 <span>Land Id (để trống nếu muốn làm ở speck)</span>
-                <input type="number" id="landId" value="" />
+                <input type="text" id="landId" placeholder="564, 5" value="" />
             </div>
             <div class="item item_input">
                 <span>Số slot làm tối đa (nếu muốn ít hơn số slot tối đa ở land)</span>
@@ -74,6 +74,10 @@
             <div class="item item_input">
                 <span>Dừng tool khi level nghề đạt đủ</span>
                 <input type="number" id="levelStop" value="888" />
+            </div>
+            <div class="item item_input">
+                <span>Delay ở mỗi lần làm (ms)</span>
+                <input type="number" id="delay" value="150`" />
             </div>
             <div class="item item_input">
                 <span>Dùng item hồi năng lượng</span>
@@ -117,7 +121,20 @@
                 </span>
                 <input type="text" id="throwItems" />
             </div>
-
+            <div class="item item_input">
+                <span>Tự login với seed phrase</span>
+                <input type="text" id="seedPhrase" />
+            </div>
+            <div class="item item_input">
+                <span>Tọa độ bắt đầu, nhập theo định dạng x,y (vd: 2445,1945)</span>
+                <span>Để trống nếu không muốn giới hạn theo tọa độ</span>
+                <input type="text" id="startCoordinate" />
+            </div>
+            <div class="item item_input">
+                <span>Tọa độ kết thúc, nhập theo định dạng x,y (vd: 2445,1945)</span>
+                <span>Để trống nếu không muốn giới hạn theo tọa độ</span>
+                <input type="text" id="endCoordinate" />
+            </div>
             <div class="item item_input">
                 <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>
                 <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
