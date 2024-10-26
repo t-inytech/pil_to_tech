@@ -1,7 +1,9 @@
 {
   "key": "",
+  "seedPhrase": "",
   "autoStart": false,
   "autoClose": false,
+  "modeFast": false,
   "automaticBuy": true,
   "limitMax": 100000,
   "limitBalance": 10000,
