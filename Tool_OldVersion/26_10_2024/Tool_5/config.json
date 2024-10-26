@@ -1,0 +1,23 @@
+{
+  "key": "",
+  "seedPhrase": "",
+  "energyStop": 100,
+  "levelStop": 999,
+  "landId": "",
+  "autoStart": false,
+  "autoClose": false,
+  "allowAllTier": false,
+  "slotLimit": 0,
+  "startCoordinate": "",
+  "endCoordinate": "",
+  "workDirection": 5,
+  "delay": 100,
+  "automaticBuy": true,
+  "listSellItems": "",
+  "throwItems": "",
+  "diffPrice": 0,
+  "eVip": true,
+  "sauna": true,
+  "sleep": false,
+  "repeat": false
+}

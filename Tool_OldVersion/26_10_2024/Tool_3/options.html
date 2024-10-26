@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Auto Tree Settings</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Chrome Extension Template" />
+    <script src="options.js" type="text/javascript"></script>
+    <link href="options.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="option_title">
+        <span>Auto Tree Settings</span>
+    </div>
+    <div class="option_area">
+        <div class="_group">
+            <div class="item">
+                <input type="checkbox" id="autoStart" />
+                <span>Tự động chạy sau khi vào web</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoClose" />
+                <span>Đóng cửa sổ sau khi chạy xong</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="modeFast" />
+                <span>Mode fast (tay dài)</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="eVip" />
+                <span>Nhận E vip</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="sauna" />
+                <span>Ngâm sauna sau khi chạy xong kịch bản</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="sleep" />
+                <span>Đi ngủ sau khi chạy xong kịch bản</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="repeat" />
+                <span>Tiếp tục làm sau khi nhận năng lượng</span>
+            </div>
+        </div>
+
+
+        <div class="_group _group_1">
+            <div class="item item_input">
+                <span>Land Id (để trống nếu muốn chặt cây ở speck)</span>
+                <input type="number" id="landId" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi năng lượng thấp hơn</span>
+                <input type="number" id="energyStop" value="50" />
+            </div>
+            <div class="item item_input">
+                <span>Dùng item hồi năng lượng</span>
+                <select id="energyItem">
+                    <option value="">Không dùng</option>
+                    <option value="itm_popberrywine">Popberry Wine</option>
+                    <option value="itm_grumpkinwine">Grumpkin Wine</option>
+                    <option value="itm_grainbow_grainshine">Grainshine</option>
+                    <option value="itm_grumpkingspicedlatte">Grumpkin Spiced Latte</option>
+                    <option value="itm_hotato_hotka">Hotka</option>
+                    <option value="itm_muckchuck_mead">Muckchuck Mead</option>
+                    <option value="itm_scarrotwine">Scarrot Wine</option>
+                </select>
+            </div>
+            <div id="energySetting" class=" item item_input">
+                <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)
+                </span>
+                <input type="number" id="buyEnergyQuantity" />
+            </div>
+        </div>
+
+
+
+        <div class="_group _group_1">
+            <div class="item item_input">
+                <span>Số cây chặt tối đa</span>
+                <span>(nếu muốn ít hơn số cây tối đa ở land)</span>
+                <input type="number" id="slotLimit" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="999" />
+            </div>
+            <div class="item item_input">
+                <span>Delay ở mỗi lần làm (ms)</span>
+                <input type="number" id="delay" placeholder="Tốc độ làm của tool"  value="150" />
+            </div>
+            <div class="item item_input">
+                <span>Chế độ Chặt gỗ</span>
+                <select id="homeTree">
+                    <option value="1">Chặt tận gốc</option>
+                    <option value="2">Chặt chừa lại gốc</option>
+                </select>
+            </div>
+
+            <div class="item item_input">
+                <span>Chặt gỗ tier rìu</span>
+                <select id="homeTreeTier">
+                    <option value="1">Tất cả tier bé hơn hoặc bằng rìu</option>
+                    <option value="2">Chỉ tier của rìu</option>
+                </select>
+            </div>
+
+            <div class="item item_input">
+                <span>Hướng di chuyển khi làm</span>
+                <select id="workDirection">
+                    <option value="1">Trái qua phải</option>
+                    <option value="2">Phải qua trái</option>
+                    <option value="3">Trên xuống dưới</option>
+                    <option value="4">Dưới lên trên</option>
+                    <option value="5">Random 1 trong 4 hướng</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="automaticBuy" />
+                <span>Mua item bằng chức năng automatic buy trong chợ</span>
+            </div>
+
+            <div class="item item_input">
+                <span>Tự login với seed phrase</span>
+                <span>
+                </span>
+                <input type="text" id="seedPhrase" />
+            </div>
+
+            <div class="item item_input"> 
+                <span>Tọa độ bắt đầu, nhập theo định dạng x,y</span>
+                <span>(vd: 2445,1945), để trống nếu không muốn giới hạn theo tọa độ
+                </span>
+                <input type="text" id="startCoordinate" />
+            </div>
+
+            <div class="item item_input"> 
+                <span> Tọa độ kết thúc, nhập theo định dạng x,y</span>
+                <span>(vd: 2445,1945), để trống nếu không muốn giới hạn theo tọa độ
+                </span>
+                <input type="text" id="endCoordinate" />
+            </div>
+
+            <div class="item item_input"> 
+                <span>  Vứt vật phẩm không cần </span>
+                <span>(nhập nhiều vật phẩm cách nhau dấu "," vd: itm_metalore_02,itm_roughstone_02)</span>
+                <input type="text" id="throwItems" />
+            </div>
+
+
+            <div class="item item_input">
+                <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>
+                <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
+                </span>
+                <input type="text" id="listSellItems" />
+            </div>
+
+            <div class="item" id="sellSetting">
+                <input type="number" id="diffPrice" />
+                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị (có thể nhập số âm nếu muốn thấp hơn)</span>
+            </div>
+        </div>
+
+        <div class="action">
+            <button id="SaveConfiguration" type="button">
+                Lưu lại
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
