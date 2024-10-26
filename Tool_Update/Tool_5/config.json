@@ -6,6 +6,7 @@
   "landId": "",
   "autoStart": false,
   "autoClose": false,
+  "energyItem": "",
   "allowAllTier": false,
   "slotLimit": 0,
   "startCoordinate": "",
