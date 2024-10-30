@@ -1,0 +1,21 @@
+{
+  "key": "kA3gVvwQoj2ZpxjHGoAD",
+  "energyStop": 50,
+  "landList": "",
+  "blacklistLands": "",
+  "slotLimit": 99999,
+  "autoStart": false,
+  "autoClose": false,
+  "modeFast": false,
+  "energyItem": "",
+  "automaticBuy": true,
+  "buyEnergyQuantity": 0,
+  "listSellItems": "",
+  "listSellPrice": "",
+  "diffPrice": 0,
+  "onlySellIfFull": false,
+  "eVip": false,
+  "sleep": true,
+  "sauna": true,
+  "repeat": false
+}

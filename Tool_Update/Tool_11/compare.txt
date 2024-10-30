@@ -1,0 +1,36 @@
+checkbox
++ autoStart *+autoStart
++ autoClose *+autoClose
++ modeFast *+modeFast
++ eVip *+eVip
++ sauna *+sauna
++ sleep *+sleep
++ repeat *+repeat
++ automaticBuy *+automaticBuy
+** onlyOne *+onlyOne
+** onlySellIfFull *+onlySellIfFull
+
+number
++ landId ----
++ energyStop *+energyStop
++ buyEnergyQuantity *+buyEnergyQuantity
++ diffPrice *+diffPrice
++ slotLimit *+slotLimit
++ levelStop -----
++ delay -----
+** listSellPrice *+listSellPrice
+
+select
++ energyItem *+energyItem
++ homeTree ----
++ homeTreeTier ----
++ workDirection ----
+
+text
++ listSellItems *+listSellItems
++ seedPhrase *+seedPhrase
++ startCoordinate  ----
++ endCoordinate  ----
++ throwItems *+throwItems
+** landList *+landList
+** blacklistLands *+blacklistLands
