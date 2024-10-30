@@ -1,5 +1,5 @@
 {
-  "key": "kA3gVvwQoj2ZpxjHGoAD",
+  "key": "",
   "modeFast": false,
   "seedPhrase": "",
   "energyStop": 100,
@@ -17,7 +17,6 @@
   "automaticBuy": false,
   "listSellItems": "",
   "diffPrice": 0,
-  "throwItems": "",
   "eVip": true,
   "sauna": true,
   "sleep": false,
