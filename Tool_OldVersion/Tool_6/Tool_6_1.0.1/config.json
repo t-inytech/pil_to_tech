@@ -1,11 +1,10 @@
 {
   "key": "",
-  "seedPhrase": "",
   "energyStop": 50,
+  "landId": "",
   "autoStart": false,
   "autoClose": false,
-  "landId": "",
-  "workAt": 1,
+  "workAt": 1, 
   "slotLimit": 0,
   "workDirection": 5,
   "repeat": false,

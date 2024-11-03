@@ -50,16 +50,12 @@
                 <span>Tiếp tục làm sau khi nhận năng lượng</span>
             </div>
             <div class="item">
-                <input type="checkbox" id="autoBuy" />
-                <span>Tự động mua nguyên liệu</span>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="automaticBuy" />
-                <span>Mua item bằng chức năng automatic buy trong chợ</span>
-            </div>
-            <div class="item">
                 <input type="checkbox" id="homeWood" />
                 <span>Chặt cây speck lấy gỗ để đốt lò</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoBuy" />
+                <span>Tự động mua nguyên liệu</span>
             </div>
         </div>
         <div class="_group _group_1">
@@ -86,7 +82,6 @@
                 <span>Dùng item hồi năng lượng</span>
                 <select id="energyItem">
                     <option value="">Không dùng</option>
-                    <option value="itm_energy_01">Berry Blast</option>
                     <option value="itm_popberrywine">Popberry Wine</option>
                     <option value="itm_grumpkinwine">Grumpkin Wine</option>
                     <option value="itm_grainbow_grainshine">Grainshine</option>
@@ -121,7 +116,10 @@
         </div>
 
         <div class="_group _group_1">
-            
+            <div class="item">
+                <input type="checkbox" id="automaticBuy" />
+                <span>Mua item bằng chức năng automatic buy trong chợ</span>
+            </div>
             <div class="item item_input">
                 <span>Mua nguyên liệu cho bao nhiêu lần craft (để trống thì mặc định sẽ mua full 2 ô 198 item)</span>
                 <input type="number" id="craftQuantity" />
@@ -131,7 +129,6 @@
                 <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
                 </span>
                 <input type="text" id="listSellItems" />
-                <input hidden type="text" id="seedPhrase" />
             </div>
 
             <div class="item" id="sellSetting">
