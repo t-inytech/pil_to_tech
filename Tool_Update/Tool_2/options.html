@@ -1,4 +1,4 @@
-
+<!-- (c) 2022 Clyde D'Souza -->
 <html>
 
 <head>
@@ -17,7 +17,7 @@
 
 <body>
     <div id="option_title">
-        <span>Auto Roll Settings</span>
+        <span>Auto Farm Settings</span>
     </div>
     <div class="option_area">
         <div class="_group">
@@ -28,20 +28,27 @@
             <div class="item">
                 <input type="checkbox" id="autoClose" />
                 <span>Đóng cửa sổ sau khi chạy xong</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="automaticBuy" />
                 <span>Mua item bằng chức năng automatic buy trong chợ</span>
-                </label>
             </div>
             <div class="item">
-            <input type="checkbox" id="modeFast" value="" />
+                <input type="checkbox" id="modeFast" value="" />
                 <span>Mode fast (tay dài)</span>
-                </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="landOnly" value="" />
+                <span>Craft tất cả các item tại land (không dùng speck)</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoCraft" value="" />
+                <span>Tự chế tạo item nếu thiếu</span>
             </div>
         </div>
-        <div class="_group">
+
+
+        <div class="_group _group_1">
             <div class="item item_input">
                 <span>Số coin dùng để roll task (dừng tool khi roll hết chừng đấy coin)</span>
                 <input type="number" id="limitMax" value="300000" />
@@ -62,71 +69,95 @@
                 <input type="number" id="limitPerPixelTask" value="20000" />
             </div>
             <div class="item item_input">
+                <span>Land Id dùng để craft đồ</span>
+                <input type="number" id="landId" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Dùng item hồi năng lượng</span>
+                <select id="energyItem">
+                    <option value="">Không dùng</option>
+                    <option value="itm_energy_01">Berry Blast</option>
+                    <option value="itm_popberrywine">Popberry Wine</option>
+                    <option value="itm_grumpkinwine">Grumpkin Wine</option>
+                    <option value="itm_grainbow_grainshine">Grainshine</option>
+                    <option value="itm_grumpkingspicedlatte">Grumpkin Spiced Latte</option>
+                    <option value="itm_hotato_hotka">Hotka</option>
+                    <option value="itm_muckchuck_mead">Muckchuck Mead</option>
+                    <option value="itm_scarrotwine">Scarrot Wine</option>
+                    <option value="itm_dry_pulled_muckchuck_platter">Dry Pulled Muckchuck Platter</option>
+                </select>
+            </div>
+            <div class="item item_input">
+                <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)</span>
+                <input type="number" id="buyEnergyQuantity" value="" />
+            </div>
+            <div class="item item_input">
+                <span> Dùng gỗ nào để đốt lò</span>
+                <select id="woodItem">
+                    <option value="">Không dùng</option>
+                    <option value="itm_woodlog_01">Gỗ 1</option>
+                    <option value="itm_woodlog_02">Gỗ 2</option>
+                </select>
+            </div>
+            <div class="item item_input">
                 <span>Các vật phẩm không muốn trả (nhập nhiều vật phẩm cách nhau dấu ",")</span>
                 <span>(Ví dụ: itm_popberryFruit,itm_grainbow)</span>
                 <input type="text" id="ignoreItems" value="" />
             </div>
-            <div class="item item_input">
-                <span> Tự login với seed phrase</span>
+            <div hidden class="item item_input">
+                <span hidden> Tự login với seed phrase</span>
                 <input type="text" id="seedPhrase" hidden value="" />
             </div>
-            
         </div>
-        <div class="_group">
+
+        <div class="_group _group_1">
             <div class="item">
                 <span>Các nghề không muốn trả</span>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreFarming" />
                 <span>Trồng cây (farming)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreCooking" />
                 <span>Nấu bánh (cooking)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreForestry" />
                 <span>Chặt cây (forestry)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreMining" />
                 <span>Đào mỏ (mining)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreWoodwork" />
                 <span>Chế gỗ (woodwork)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreMetalworking" />
                 <span>Kim loại (metalworking)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreStoneshaping" />
                 <span>Điêu khắc (stoneshaping)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignorePetcare" />
                 <span>Nuôi thú (petcare)</span>
-                </label>
             </div>
             <div class="item">
                 <input type="checkbox" id="ignoreBusiness" />
                 <span>Kinh doanh (business)</span>
-                </label>
             </div>
         </div>
+
         <div class="action">
-            <button id="SaveConfiguration" type="button" class="btn-primary">
+            <button id="SaveConfiguration" type="button">
                 Lưu lại
             </button>
         </div>
+    </div>
 </body>
 
 </html>
