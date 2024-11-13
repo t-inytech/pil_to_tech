@@ -1,5 +1,5 @@
 @echo off
-git reset --hard HEAD
+git fetch
+git reset --hard origin/main
 git clean -fd
-git pull
 pause
