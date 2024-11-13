@@ -17,6 +17,7 @@
   "homeWood": false,
   "woodwork": "ach_woodplank_01",
   "listSellItems": "",
+  "listSellPrice": "",
   "diffPrice": 0,
   "sauna": true,
   "sleep": false,
