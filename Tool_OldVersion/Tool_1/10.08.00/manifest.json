@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Pixels Auto Farm",
   "description": "Pixels Auto Tools",
-  "version": "10.9.0",
-  "author": "T-INY",
+  "version": "10.08.00",
+  "author": "T-INY Tech",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

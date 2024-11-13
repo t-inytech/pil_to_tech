@@ -6,7 +6,7 @@
   "landId": "",
   "autoStart": false,
   "autoClose": false,
-  "slotLimit": "",
+  "slotLimit": "500",
   "startCoordinate": "",
   "endCoordinate": "",
   "delay": 50,
