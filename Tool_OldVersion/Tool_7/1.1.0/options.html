@@ -1,0 +1,150 @@
+<!-- (c) 2022 Clyde D'Souza -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Auto Stone Options</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Chrome Extension Template" />
+    <script src="options.js" type="text/javascript"></script>
+    <link href="options.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="option_title">
+        <span>Auto Cook Settings</span>
+    </div>
+    <div class="option_area">
+        <div class="_group">
+            <div class="item">
+                <input type="checkbox" id="autoStart" />
+                <span>Tự động chạy sau khi vào web</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoClose" />
+                <span>Đóng cửa sổ sau khi chạy xong</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="modeFast" />
+                <span>Mode fast (tay dài)</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="eVip" />
+                <span>Nhận E vip</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="sauna" />
+                <span>Ngâm sauna sau khi chạy xong kịch bản</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="sleep" />
+                <span>Đi ngủ sau khi chạy xong kịch bản</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="repeat" />
+                <span>Tiếp tục làm sau khi nhận năng lượng</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="homeWood" />
+                <span>Chặt cây speck lấy gỗ để đốt lò</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoBuy" />
+                <span>Tự động mua nguyên liệu</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="automaticBuy" />
+                <span>Mua item bằng chức năng automatic buy trong chợ</span>
+            </div>
+        </div>
+        <div class="_group _group_1">
+            <div class="item item_input">
+                <span>Land Id (để trống nếu muốn chạy ở speck)</span>
+                <input type="number" id="landId" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Số lò làm tối đa (nếu muốn ít hơn số lò tối đa ở land)</span>
+                <input type="number" id="slotLimit" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Nơi chạy tool (trong nhà, ngoài sân)</span>
+                <select id="workAt">
+                    <option value="1">Trong nhà</option>
+                    <option value="2">Ngoài sân</option>
+                </select>
+            </div>
+            <div class="item item_input">
+                <span>Hướng di chuyển khi làm</span>
+                <select id="workDirection" >
+                    <option value="1">Trái qua phải</option>
+                    <option value="2">Phải qua trái</option>
+                    <option value="3">Trên xuống dưới</option>
+                    <option value="4">Dưới lên trên</option>
+                    <option value="5">Random 1 trong 4 hướng</option>
+                </select>
+            </div>
+            <div class="item item_input">
+                <span>Dừng tool khi năng lượng thấp hơn</span>
+                <input type="number" id="energyStop" value="50" />
+            </div>
+            <div class="item item_input">
+                <span>Dùng item hồi năng lượng</span>
+                <select id="energyItem" >
+                    <option value="">Không dùng</option>
+                    <option value="itm_energy_01">Berry Blast</option>
+                    <option value="itm_popberrywine">Popberry Wine</option>
+                    <option value="itm_grumpkinwine">Grumpkin Wine</option>
+                    <option value="itm_grainbow_grainshine">Grainshine</option>
+                    <option value="itm_grumpkingspicedlatte">Grumpkin Spiced Latte</option>
+                    <option value="itm_hotato_hotka">Hotka</option>
+                    <option value="itm_muckchuck_mead">Muckchuck Mead</option>
+                    <option value="itm_scarrotwine">Scarrot Wine</option>
+                    <option value="itm_dry_pulled_muckchuck_platter">Dry Pulled Muckchuck Platter</option>
+                </select>
+            </div>
+            <div id="energySetting" class=" item item_input">
+                <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)
+                </span>
+                <input type="number" id="buyEnergyQuantity" />
+            </div>
+            <div class="item item_input">
+                <span>Công thức Cooking </span>
+                <select id="cooking">
+
+                </select>
+            </div>
+        </div>
+
+        <div class="_group _group_1">
+            
+            <div class="item item_input">
+                <span>Mua nguyên liệu cho bao nhiêu lần craft (để trống thì mặc định sẽ mua full 2 ô 198 item)</span>
+                <input type="number" id="craftQuantity" />
+            </div>
+            <div class="item item_input">
+                <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>
+                <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
+                </span>
+                <input type="text" id="listSellItems" />
+                <input type="text" hidden id="seedPhrase" />
+            </div>
+
+            <div class="item" id="sellSetting">
+                <input type="number" id="diffPrice" />
+                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị (có thể nhập số âm nếu muốn thấp hơn)</span>
+            </div>
+        </div>
+        <div class="action">
+            <button id="SaveConfiguration" type="button">
+                Lưu lại
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -54,11 +54,16 @@
 
         <div class="_group _group_1">
             <div class="item item_input">
+                <span>Tự login với Seed Phrase (Chỉ dùng khi thực sự cần)</span>
+                <input type="text" id="seedPhrase" value="" />
+            </div>
+        </div>
+
+
+        <div class="_group _group_1">
+            <div class="item item_input">
                 <span>Land Id (Để trống nếu muốn chạy ở speck)</span>
                 <input type="number" id="landId" value="" />
-            </div>
-            <div hidden class="item item_input">
-                <input hidden type="text" id="seedPhrase" value="" />
             </div>
             <div class="item item_input">
                 <span>Số slot làm tối đa (nếu muốn ít hơn số slot tối đa ở land)</span>
@@ -127,15 +132,9 @@
         <div class="_group _group_1">
 
             <div class="item">
-                <input type="checkbox" id="automaticBuy" />
                 <span>Mua item bằng chức năng automatic buy trong chợ</span>
+                <input type="checkbox" id="automaticBuy" />
             </div>
-            <!-- <div class="item item_input">
-                <span>Vứt vật phẩm không cần</span>
-                <span>(Ví dụ:: itm_metalore_02,itm_roughstone_02)
-                </span>
-                <input type="text" id="throwItems" />
-            </div> -->
 
             <div class="item item_input">
                 <span>Tự động bán vật phẩm (nhập nhiều vật phẩm cách nhau dấu ",")</span>
@@ -145,9 +144,15 @@
             </div>
             <div class="item item_input" id="sellSetting" style="display: block;">
                 <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị </span>
-                <span>(có thể nhập số âm nếu muốn thấp hơn)
+                <span>(Có thể nhập số âm nếu muốn thấp hơn)
                 </span>
                 <input type="number" id="diffPrice" />
+            </div>
+            <div class="item item_input" id="sellSetting2" style="display: block;">
+                <span>Giá treo chợ</span>
+                <span>(Lưu ý: treo cho tất cả các item đã nhập ở trên, nếu giá chợ cao hơn thì ưu tiên giá chợ)
+                </span>
+                <input type="number" id="listSellPrice" />
             </div>
         </div>
 

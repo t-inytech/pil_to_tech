@@ -1,5 +1,6 @@
 {
   "key": "",
+  "seedPhrase": "",
   "energyStop": 50,
   "autoStart": false,
   "autoClose": false,
@@ -12,6 +13,7 @@
   "buyEnergyQuantity": 0,
   "recipe": "ach_popberryWine",
   "listSellItems": "",
+  "listSellPrice": "",
   "diffPrice": 0,
   "sauna": true,
   "sleep": false,

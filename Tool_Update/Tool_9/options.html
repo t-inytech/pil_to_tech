@@ -54,6 +54,14 @@
 
         <div class="_group _group_1">
             <div class="item item_input">
+                <span>Tự login với Seed Phrase (Chỉ dùng khi thực sự cần)</span>
+                <input type="text" id="seedPhrase" value="" />
+            </div>
+        </div>
+
+
+        <div class="_group _group_1">
+            <div class="item item_input">
                 <span>Land Id (Để trống nếu muốn chạy ở Terra)</span>
                 <input type="number" id="landId" value="" />
             </div>
@@ -68,12 +76,13 @@
             <div class="item ">
                 <input type="checkbox" id="autoBuy" />
                 <span><label for="autoBuy">Tự động mua nguyên liệu</label></span>
-                
+
             </div>
             <div class="item item_input">
                 <span>Dùng item hồi năng lượng</span>
                 <select id="energyItem">
                     <option value="">Không dùng</option>
+                    <option value="itm_energy_01">Berry Blast</option>
                     <option value="itm_popberrywine">Popberry Wine</option>
                     <option value="itm_grumpkinwine">Grumpkin Wine</option>
                     <option value="itm_grainbow_grainshine">Grainshine</option>
@@ -91,8 +100,8 @@
             </div>
             <div class="item item_input">
                 <span>Công thức nấu rượu</span>
-                <select id="recipe" >
-                    
+                <select id="recipe">
+
                 </select>
             </div>
         </div>
@@ -113,6 +122,12 @@
                 <span>(có thể nhập số âm nếu muốn thấp hơn)
                 </span>
                 <input type="number" id="diffPrice" />
+            </div>
+            <div class="item item_input" id="sellSetting2" style="display: block;">
+                <span>Giá treo chợ</span>
+                <span>(Lưu ý: treo cho tất cả các item đã nhập ở trên, nếu giá chợ cao hơn thì ưu tiên giá chợ)
+                </span>
+                <input type="number" id="listSellPrice" />
             </div>
         </div>
         <div class="action">

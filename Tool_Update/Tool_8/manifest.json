@@ -2,18 +2,14 @@
   "manifest_version": 3,
   "name": "Pixels Auto Bee",
   "description": "Pixels Auto Tools",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "T-INY Tech",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": [
-    "storage",
-    "tabs",
-    "activeTab"
-  ],
+  "permissions": ["storage", "tabs", "activeTab"],
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
@@ -22,18 +18,23 @@
     "service_worker": "background.js",
     "type": "module"
   },
-  "content_scripts": [{
-    "matches": ["*://play.pixels.xyz/*"],
-    "js": ["content_scripts.js"]
-  },{
-    "matches": ["*://play.pixels.xyz/*"],
-    "js": ["variables.js"],
-    "world": "MAIN"
-  }],
-  "web_accessible_resources": [{
-    "resources": ["variables.html"],
-    "matches": ["*://play.pixels.xyz/*"]
-  }],
+  "content_scripts": [
+    {
+      "matches": ["*://play.pixels.xyz/*"],
+      "js": ["content_scripts.js"]
+    },
+    {
+      "matches": ["*://play.pixels.xyz/*"],
+      "js": ["variables.js"],
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["variables.html"],
+      "matches": ["*://play.pixels.xyz/*"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html#popup",
     "default_title": "Auto Bee"

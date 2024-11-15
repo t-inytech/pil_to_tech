@@ -17,6 +17,7 @@
   "homeWood": false,
   "crafting": "ach_claypowder",
   "listSellItems": "",
+  "listSellPrice": "",
   "diffPrice": 0,
   "sauna": true,
   "sleep": false,

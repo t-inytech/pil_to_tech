@@ -49,27 +49,19 @@
                 <input type="checkbox" id="repeat" />
                 <span>Tiếp tục làm sau khi nhận năng lượng</span>
             </div>
-            <div class="item">
-                <input type="checkbox" id="homeWood" />
-                <span>Chặt cây speck lấy gỗ để đốt lò</span>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="autoBuy" />
-                <span>Tự động mua nguyên liệu</span>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="automaticBuy" />
-                <span>Mua item bằng chức năng automatic buy trong chợ</span>
+        </div>
+
+        <div class="_group _group_1">
+            <div class="item item_input">
+                <span>Tự login với Seed Phrase (Chỉ dùng khi thực sự cần)</span>
+                <input type="text" id="seedPhrase" value="" />
             </div>
         </div>
+
         <div class="_group _group_1">
             <div class="item item_input">
                 <span>Land Id (để trống nếu muốn chạy ở speck)</span>
                 <input type="number" id="landId" value="" />
-            </div>
-            <div class="item item_input">
-                <span>Số lò làm tối đa (nếu muốn ít hơn số lò tối đa ở land)</span>
-                <input type="number" id="slotLimit" value="" />
             </div>
             <div class="item item_input">
                 <span>Nơi chạy tool (trong nhà, ngoài sân)</span>
@@ -79,8 +71,13 @@
                 </select>
             </div>
             <div class="item item_input">
+                <span>Số lò làm tối đa</span>
+                <span>(Nếu muốn ít hơn số lò tối đa ở land)</span>
+                <input type="text" id="slotLimit" value="" />
+            </div>
+            <div class="item item_input">
                 <span>Hướng di chuyển khi làm</span>
-                <select id="workDirection" >
+                <select id="workDirection">
                     <option value="1">Trái qua phải</option>
                     <option value="2">Phải qua trái</option>
                     <option value="3">Trên xuống dưới</option>
@@ -94,7 +91,7 @@
             </div>
             <div class="item item_input">
                 <span>Dùng item hồi năng lượng</span>
-                <select id="energyItem" >
+                <select id="energyItem">
                     <option value="">Không dùng</option>
                     <option value="itm_energy_01">Berry Blast</option>
                     <option value="itm_popberrywine">Popberry Wine</option>
@@ -108,9 +105,18 @@
                 </select>
             </div>
             <div id="energySetting" class=" item item_input">
-                <span>Mua item hồi năng lượng sau khi dùng hết (nhập số lượng muốn mua, để trống nếu không muốn mua)
+                <span>Mua item hồi năng lượng sau khi dùng hết</span>
+                <span>(Nhập số lượng muốn mua, để trống nếu không muốn mua)
                 </span>
                 <input type="number" id="buyEnergyQuantity" />
+            </div>
+            <div class="item item_input">
+                <span>Dùng gỗ nào để đốt lò</span>
+                <select id="woodItem">
+                    <option value="">Không dùng</option>
+                    <option value="itm_woodlog_01">Gỗ 1</option>
+                    <option value="itm_woodlog_02">Gỗ 2</option>
+                </select>
             </div>
             <div class="item item_input">
                 <span>Công thức Cooking </span>
@@ -121,9 +127,21 @@
         </div>
 
         <div class="_group _group_1">
-            
+            <div class="item">
+                <input type="checkbox" id="homeWood" />
+                <span>Chặt cây speck lấy gỗ để đốt lò</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="autoBuy" />
+                <span>Tự động mua nguyên liệu</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="automaticBuy" />
+                <span>Mua item bằng chức năng automatic buy trong chợ</span>
+            </div>
             <div class="item item_input">
-                <span>Mua nguyên liệu cho bao nhiêu lần craft (để trống thì mặc định sẽ mua full 2 ô 198 item)</span>
+                <span>Mua nguyên liệu cho bao nhiêu lần craft</span>
+                <span>(Để trống thì mặc định sẽ mua full 2 ô 198 item)</span>
                 <input type="number" id="craftQuantity" />
             </div>
             <div class="item item_input">
@@ -131,12 +149,18 @@
                 <span>(Ví dụ: itm_popberryFruit,itm_grainbow)
                 </span>
                 <input type="text" id="listSellItems" />
-                <input type="text" hidden id="seedPhrase" />
             </div>
 
-            <div class="item" id="sellSetting">
+            <div class="item item_input" id="sellSetting">
+                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị</span>
+                <span>(Có thể nhập số âm nếu muốn thấp hơn)</span>
                 <input type="number" id="diffPrice" />
-                <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị (có thể nhập số âm nếu muốn thấp hơn)</span>
+            </div>
+
+            <div class="item item_input" id="sellSetting2">
+                <span>Giá treo chợ</span>
+                <span>(Lưu ý: treo cho tất cả các item đã nhập ở trên, nếu giá chợ cao hơn thì ưu tiên giá chợ)</span>
+                <input type="number" id="listSellPrice" />
             </div>
         </div>
         <div class="action">

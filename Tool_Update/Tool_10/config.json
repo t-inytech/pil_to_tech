@@ -16,6 +16,7 @@
   "buyEnergyQuantity": 0,
   "recipe": "ach_metalbar_01",
   "listSellItems": "",
+  "listSellPrice": "",
   "diffPrice": 0,
   "sauna": true,
   "sleep": false,
