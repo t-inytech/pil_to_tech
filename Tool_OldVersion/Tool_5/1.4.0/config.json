@@ -7,8 +7,6 @@
   "autoStart": false,
   "autoClose": false,
   "energyItem": "",
-  "buyEnergyQuantity": 0,
-  "buyToolQuantity": 10,
   "allowAllTier": false,
   "slotLimit": 0,
   "startCoordinate": "",
