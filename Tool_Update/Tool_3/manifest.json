@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Pixels Auto Tree",
   "description": "Pixels Auto Tools",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "T-INY Tech",
   "icons": {
     "16": "icons/icon16.png",
