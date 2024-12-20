@@ -5,7 +5,7 @@
   "autoClose": false,
   "landId": "",
   "landOnly": false,
-  "energyItem": "itm_energy_01",
+  "energyItem": "",
   "buyEnergyQuantity": 99,
   "woodItem": "itm_woodlog_01",
   "modeFast": false,
