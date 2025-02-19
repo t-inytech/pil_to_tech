@@ -62,12 +62,20 @@
                 <input type="number" id="delay" value="100" />
             </div>
             <div class="item item_input">
+                <span>Dừng tool khi level nghề đạt đủ</span>
+                <input type="number" id="levelStop" value="900" />
+            </div>
+            <div class="item item_input">
                 <span>Số kéo mỗi lần mua sau khi hỏng </span>
                 <input type="number" id="buyToolQuantity" value="10" />
             </div>
             <div class="item item_input">
                 <span>Land Id (để trống nếu muốn trồng ở speck)</span>
                 <input type="number" id="landId" value="" />
+            </div>
+            <div class="item item_input">
+                <span>Delay ở mỗi lần làm (đơn vị ms, càng nhỏ thì làm càng nhanh nhưng dễ bị limit)</span>
+                <input type="number" id="delay" value="100" />
             </div>
             <div class="item item_input">
                 <span>Dừng tool khi level nghề đạt đủ</span>
@@ -170,15 +178,11 @@
                 <input type="text" id="listSellItems" />
             </div>
 
+           
+
             <div class="item" id="sellSetting">
                 <input type="number" id="diffPrice" />
                 <span>Treo giá cao hoặc thấp hơn bao nhiêu đơn vị (có thể nhập số âm nếu muốn thấp hơn)</span>
-            </div>
-            <div class="item item_input">
-                <span>Giá treo chợ</span>
-                <span>(Lưu ý: treo cho tất cả các item đã nhập ở trên, nếu giá chợ cao hơn thì ưu tiên giá chợ)
-                </span>
-                <input type="number" id="listSellPrice" />
             </div>
         </div>
 
