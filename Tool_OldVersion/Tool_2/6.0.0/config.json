@@ -10,7 +10,6 @@
   "woodItem": "itm_woodlog_01",
   "modeFast": false,
   "autoCraft": true,
-  "waitCraft": true,
   "automaticBuy": true,
   "limitMax": 100000,
   "limitBalance": 10000,
